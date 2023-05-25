@@ -1,0 +1,445 @@
+[0m17:49:49.405616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab47810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab460d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b217d50>]}
+
+
+============================== 17:49:49.410112 | 4394672c-6863-434e-822b-48ec72f24d7a ==============================
+[0m17:49:49.410112 [info ] [MainThread]: Running with dbt=1.5.0
+[0m17:49:49.410480 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/adrathi/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/adrathi/HelloWorldDBT/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m17:49:49.410806 [info ] [MainThread]: dbt version: 1.5.0
+[0m17:49:49.410984 [info ] [MainThread]: python version: 3.11.2
+[0m17:49:49.411161 [info ] [MainThread]: python path: /Users/adrathi/hello-dbt/bin/python3.11
+[0m17:49:49.411319 [info ] [MainThread]: os info: macOS-13.3.1-arm64-arm-64bit
+[0m17:49:49.411471 [info ] [MainThread]: Using profiles.yml file at /Users/adrathi/.dbt/profiles.yml
+[0m17:49:49.411630 [info ] [MainThread]: Using dbt_project.yml file at /Users/adrathi/HelloWorldDBT/dbt_project.yml
+[0m17:49:49.411775 [info ] [MainThread]: Configuration:
+[0m17:49:49.581653 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m17:49:49.590550 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:49:49.590764 [info ] [MainThread]: Required dependencies:
+[0m17:49:49.590959 [debug] [MainThread]: Executing "git --help"
+[0m17:49:49.688377 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:49:49.688987 [debug] [MainThread]: STDERR: "b''"
+[0m17:49:49.689147 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:49:49.689303 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:49:49.689428 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "HelloWorldDBT", target "test" invalid: 'schema' is a required property
+
+
+[0m17:49:49.689783 [debug] [MainThread]: Command `dbt debug` failed at 17:49:49.689708 after 0.41 seconds
+[0m17:49:49.690061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b1fd590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae56650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8c6190>]}
+[0m17:49:49.690331 [debug] [MainThread]: Flushing usage events
+[0m17:49:49.748294 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m17:50:44.179601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e4ac90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106212bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061f3990>]}
+
+
+============================== 17:50:44.182989 | c0d4e310-d692-4404-b354-dc3dc11b34a6 ==============================
+[0m17:50:44.182989 [info ] [MainThread]: Running with dbt=1.5.0
+[0m17:50:44.183375 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/adrathi/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/adrathi/HelloWorldDBT/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m17:50:44.183688 [info ] [MainThread]: dbt version: 1.5.0
+[0m17:50:44.183882 [info ] [MainThread]: python version: 3.11.2
+[0m17:50:44.184066 [info ] [MainThread]: python path: /Users/adrathi/hello-dbt/bin/python3.11
+[0m17:50:44.184220 [info ] [MainThread]: os info: macOS-13.3.1-arm64-arm-64bit
+[0m17:50:44.184373 [info ] [MainThread]: Using profiles.yml file at /Users/adrathi/.dbt/profiles.yml
+[0m17:50:44.184537 [info ] [MainThread]: Using dbt_project.yml file at /Users/adrathi/HelloWorldDBT/dbt_project.yml
+[0m17:50:44.184681 [info ] [MainThread]: Configuration:
+[0m17:50:44.335188 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m17:50:44.344112 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:50:44.344311 [info ] [MainThread]: Required dependencies:
+[0m17:50:44.344514 [debug] [MainThread]: Executing "git --help"
+[0m17:50:44.434040 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:50:44.434697 [debug] [MainThread]: STDERR: "b''"
+[0m17:50:44.434857 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:50:44.435034 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:50:44.435162 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "HelloWorldDBT", target "dev" invalid: 'schema' is a required property
+
+
+[0m17:50:44.435493 [debug] [MainThread]: Command `dbt debug` failed at 17:50:44.435415 after 0.37 seconds
+[0m17:50:44.435752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e2a910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063eb810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fc1dd0>]}
+[0m17:50:44.436018 [debug] [MainThread]: Flushing usage events
+[0m17:50:45.307080 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m17:52:13.158802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10609e810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e88310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106152c10>]}
+
+
+============================== 17:52:13.162428 | 40c401aa-8465-482e-b714-6d50c7ced730 ==============================
+[0m17:52:13.162428 [info ] [MainThread]: Running with dbt=1.5.0
+[0m17:52:13.162774 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/adrathi/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/adrathi/HelloWorldDBT/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m17:52:13.163078 [info ] [MainThread]: dbt version: 1.5.0
+[0m17:52:13.163240 [info ] [MainThread]: python version: 3.11.2
+[0m17:52:13.163405 [info ] [MainThread]: python path: /Users/adrathi/hello-dbt/bin/python3.11
+[0m17:52:13.163543 [info ] [MainThread]: os info: macOS-13.3.1-arm64-arm-64bit
+[0m17:52:13.163676 [info ] [MainThread]: Using profiles.yml file at /Users/adrathi/.dbt/profiles.yml
+[0m17:52:13.163817 [info ] [MainThread]: Using dbt_project.yml file at /Users/adrathi/HelloWorldDBT/dbt_project.yml
+[0m17:52:13.163940 [info ] [MainThread]: Configuration:
+[0m17:52:13.316541 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:52:13.325319 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:52:13.325507 [info ] [MainThread]: Required dependencies:
+[0m17:52:13.325713 [debug] [MainThread]: Executing "git --help"
+[0m17:52:13.413787 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:52:13.414409 [debug] [MainThread]: STDERR: "b''"
+[0m17:52:13.414559 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:52:13.414735 [info ] [MainThread]: Connection:
+[0m17:52:13.414953 [info ] [MainThread]:   method: oauth
+[0m17:52:13.415081 [info ] [MainThread]:   database: helix-offc-test
+[0m17:52:13.415203 [info ] [MainThread]:   schema: coupa_api_dm
+[0m17:52:13.415367 [info ] [MainThread]:   location: US
+[0m17:52:13.415572 [info ] [MainThread]:   priority: interactive
+[0m17:52:13.415715 [info ] [MainThread]:   timeout_seconds: 300
+[0m17:52:13.415843 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m17:52:13.415967 [info ] [MainThread]:   execution_project: helix-offc-test
+[0m17:52:13.416087 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m17:52:13.416427 [info ] [MainThread]:   job_retries: 1
+[0m17:52:13.416620 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m17:52:13.416752 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m17:52:13.416872 [info ] [MainThread]:   gcs_bucket: None
+[0m17:52:13.451123 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m17:52:13.451872 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:52:14.203569 [debug] [MainThread]: On debug: select 1 as id
+[0m17:52:16.227428 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=helix-offc-test&j=bq:US:995551ef-5af1-4d57-8202-2341247e0fa0&page=queryresults
+[0m17:52:16.229192 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:52:16.229912 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:52:16.230875 [debug] [MainThread]: Command `dbt debug` succeeded at 17:52:16.230677 after 3.19 seconds
+[0m17:52:16.231344 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:52:16.231820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062f6fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e68fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d4fd90>]}
+[0m17:52:16.232385 [debug] [MainThread]: Flushing usage events
+[0m17:52:17.098105 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m17:52:23.728605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bf3a790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bb3a210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c224a10>]}
+
+
+============================== 17:52:23.732125 | 0b1ef7c9-5135-4e90-83eb-2b15dc3d3cb5 ==============================
+[0m17:52:23.732125 [info ] [MainThread]: Running with dbt=1.5.0
+[0m17:52:23.732476 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/adrathi/.dbt', 'log_path': '/Users/adrathi/HelloWorldDBT/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m17:52:23.901441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b1ef7c9-5135-4e90-83eb-2b15dc3d3cb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c232f10>]}
+[0m17:52:23.906711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b1ef7c9-5135-4e90-83eb-2b15dc3d3cb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c216190>]}
+[0m17:52:23.917819 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m17:52:23.918378 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m17:52:23.918621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0b1ef7c9-5135-4e90-83eb-2b15dc3d3cb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bf239d0>]}
+[0m17:52:24.241909 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m17:52:24.248147 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m17:52:24.281252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b1ef7c9-5135-4e90-83eb-2b15dc3d3cb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c224190>]}
+[0m17:52:24.284556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b1ef7c9-5135-4e90-83eb-2b15dc3d3cb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ddb2e50>]}
+[0m17:52:24.284762 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m17:52:24.284930 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b1ef7c9-5135-4e90-83eb-2b15dc3d3cb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bf50dd0>]}
+[0m17:52:24.285615 [info ] [MainThread]: 
+[0m17:52:24.285951 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:52:24.286434 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_helix-offc-test'
+[0m17:52:24.286588 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:52:25.846360 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_helix-offc-test, now list_helix-offc-test_coupa_api_dm)
+[0m17:52:25.847483 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:52:26.458270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b1ef7c9-5135-4e90-83eb-2b15dc3d3cb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d4f48d0>]}
+[0m17:52:26.459762 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:52:26.460221 [info ] [MainThread]: 
+[0m17:52:26.468241 [debug] [Thread-1 (]: Began running node model.HelloWorldDBT.my_first_dbt_model
+[0m17:52:26.468802 [info ] [Thread-1 (]: 1 of 2 START sql table model coupa_api_dm.my_first_dbt_model ................... [RUN]
+[0m17:52:26.469500 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_helix-offc-test_coupa_api_dm, now model.HelloWorldDBT.my_first_dbt_model)
+[0m17:52:26.469820 [debug] [Thread-1 (]: Began compiling node model.HelloWorldDBT.my_first_dbt_model
+[0m17:52:26.473892 [debug] [Thread-1 (]: Writing injected SQL for node "model.HelloWorldDBT.my_first_dbt_model"
+[0m17:52:26.474988 [debug] [Thread-1 (]: Timing info for model.HelloWorldDBT.my_first_dbt_model (compile): 17:52:26.470032 => 17:52:26.474810
+[0m17:52:26.475247 [debug] [Thread-1 (]: Began executing node model.HelloWorldDBT.my_first_dbt_model
+[0m17:52:26.500205 [debug] [Thread-1 (]: Writing runtime sql for node "model.HelloWorldDBT.my_first_dbt_model"
+[0m17:52:26.500866 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:52:26.501096 [debug] [Thread-1 (]: On model.HelloWorldDBT.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "HelloWorldDBT", "target_name": "dev", "node_id": "model.HelloWorldDBT.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `helix-offc-test`.`coupa_api_dm`.`my_first_dbt_model`
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m17:52:27.297722 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=helix-offc-test&j=bq:US:72d65b91-3886-4fd0-841b-f859920c52da&page=queryresults
+[0m17:52:27.300277 [debug] [Thread-1 (]: Timing info for model.HelloWorldDBT.my_first_dbt_model (execute): 17:52:26.475399 => 17:52:27.299828
+[0m17:52:27.316774 [debug] [Thread-1 (]: Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  Access Denied: Dataset helix-offc-test:coupa_api_dm: Permission bigquery.tables.create denied on dataset helix-offc-test:coupa_api_dm (or it may not exist).
+  compiled Code at target/run/HelloWorldDBT/models/example/my_first_dbt_model.sql
+[0m17:52:27.317428 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b1ef7c9-5135-4e90-83eb-2b15dc3d3cb5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11dac3a90>]}
+[0m17:52:27.318142 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model coupa_api_dm.my_first_dbt_model .......... [[31mERROR[0m in 0.85s]
+[0m17:52:27.318680 [debug] [Thread-1 (]: Finished running node model.HelloWorldDBT.my_first_dbt_model
+[0m17:52:27.319645 [debug] [Thread-1 (]: Began running node model.HelloWorldDBT.my_second_dbt_model
+[0m17:52:27.320103 [info ] [Thread-1 (]: 2 of 2 SKIP relation coupa_api_dm.my_second_dbt_model .......................... [[33mSKIP[0m]
+[0m17:52:27.320506 [debug] [Thread-1 (]: Finished running node model.HelloWorldDBT.my_second_dbt_model
+[0m17:52:27.322012 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:52:27.322263 [debug] [MainThread]: Connection 'model.HelloWorldDBT.my_first_dbt_model' was properly closed.
+[0m17:52:27.322504 [info ] [MainThread]: 
+[0m17:52:27.322813 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 3.04 seconds (3.04s).
+[0m17:52:27.323341 [debug] [MainThread]: Command end result
+[0m17:52:27.334859 [info ] [MainThread]: 
+[0m17:52:27.335436 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:52:27.335668 [info ] [MainThread]: 
+[0m17:52:27.335893 [error] [MainThread]: [33mDatabase Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)[0m
+[0m17:52:27.336106 [error] [MainThread]:   Access Denied: Dataset helix-offc-test:coupa_api_dm: Permission bigquery.tables.create denied on dataset helix-offc-test:coupa_api_dm (or it may not exist).
+[0m17:52:27.336329 [error] [MainThread]:   compiled Code at target/run/HelloWorldDBT/models/example/my_first_dbt_model.sql
+[0m17:52:27.336591 [info ] [MainThread]: 
+[0m17:52:27.336888 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m17:52:27.337465 [debug] [MainThread]: Command `dbt run` failed at 17:52:27.337350 after 3.72 seconds
+[0m17:52:27.337773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b9bac50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11bbd3d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c1fd550>]}
+[0m17:52:27.338015 [debug] [MainThread]: Flushing usage events
+[0m17:52:28.146475 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m12:51:44.684877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b97bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c17690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113821fd0>]}
+
+
+============================== 12:51:44.688955 | f84dc74b-284a-447d-85a2-50e15b985422 ==============================
+[0m12:51:44.688955 [info ] [MainThread]: Running with dbt=1.5.0
+[0m12:51:44.689328 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/adrathi/HelloWorldDBT/logs', 'version_check': 'True', 'profiles_dir': '/Users/adrathi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:51:45.006111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f84dc74b-284a-447d-85a2-50e15b985422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113816c50>]}
+[0m12:51:45.011274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f84dc74b-284a-447d-85a2-50e15b985422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1158d3350>]}
+[0m12:51:45.021780 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m12:51:45.052644 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:51:45.052884 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:51:45.057204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f84dc74b-284a-447d-85a2-50e15b985422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115ac7e50>]}
+[0m12:51:45.062394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f84dc74b-284a-447d-85a2-50e15b985422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115a25310>]}
+[0m12:51:45.062655 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m12:51:45.062899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f84dc74b-284a-447d-85a2-50e15b985422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115884c50>]}
+[0m12:51:45.063951 [info ] [MainThread]: 
+[0m12:51:45.064449 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:51:45.065026 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_helix-offc-test'
+[0m12:51:45.065199 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:51:46.892248 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_helix-offc-test, now list_helix-offc-test_coupa_api_dm)
+[0m12:51:46.893416 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:51:47.514786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f84dc74b-284a-447d-85a2-50e15b985422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115884c50>]}
+[0m12:51:47.516304 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:51:47.516755 [info ] [MainThread]: 
+[0m12:51:47.523801 [debug] [Thread-1 (]: Began running node model.HelloWorldDBT.my_first_dbt_model
+[0m12:51:47.524300 [info ] [Thread-1 (]: 1 of 2 START sql table model coupa_api_dm.my_first_dbt_model ................... [RUN]
+[0m12:51:47.524989 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_helix-offc-test_coupa_api_dm, now model.HelloWorldDBT.my_first_dbt_model)
+[0m12:51:47.525276 [debug] [Thread-1 (]: Began compiling node model.HelloWorldDBT.my_first_dbt_model
+[0m12:51:47.529863 [debug] [Thread-1 (]: Writing injected SQL for node "model.HelloWorldDBT.my_first_dbt_model"
+[0m12:51:47.531381 [debug] [Thread-1 (]: Timing info for model.HelloWorldDBT.my_first_dbt_model (compile): 12:51:47.525489 => 12:51:47.531183
+[0m12:51:47.531689 [debug] [Thread-1 (]: Began executing node model.HelloWorldDBT.my_first_dbt_model
+[0m12:51:47.557551 [debug] [Thread-1 (]: Writing runtime sql for node "model.HelloWorldDBT.my_first_dbt_model"
+[0m12:51:47.558507 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:51:47.558739 [debug] [Thread-1 (]: On model.HelloWorldDBT.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "HelloWorldDBT", "target_name": "dev", "node_id": "model.HelloWorldDBT.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `helix-offc-test`.`coupa_api_dm`.`my_first_dbt_model`
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m12:51:51.835802 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=helix-offc-test&j=bq:US:d470410b-8a94-4bf9-bd28-6b6068ae2c7c&page=queryresults
+[0m12:51:51.852542 [debug] [Thread-1 (]: Timing info for model.HelloWorldDBT.my_first_dbt_model (execute): 12:51:47.531876 => 12:51:51.852311
+[0m12:51:51.853463 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f84dc74b-284a-447d-85a2-50e15b985422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11567a910>]}
+[0m12:51:51.854117 [info ] [Thread-1 (]: 1 of 2 OK created sql table model coupa_api_dm.my_first_dbt_model .............. [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 4.33s]
+[0m12:51:51.854717 [debug] [Thread-1 (]: Finished running node model.HelloWorldDBT.my_first_dbt_model
+[0m12:51:51.855505 [debug] [Thread-1 (]: Began running node model.HelloWorldDBT.my_second_dbt_model
+[0m12:51:51.855937 [info ] [Thread-1 (]: 2 of 2 START sql view model coupa_api_dm.my_second_dbt_model ................... [RUN]
+[0m12:51:51.856590 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.HelloWorldDBT.my_first_dbt_model, now model.HelloWorldDBT.my_second_dbt_model)
+[0m12:51:51.856862 [debug] [Thread-1 (]: Began compiling node model.HelloWorldDBT.my_second_dbt_model
+[0m12:51:51.860806 [debug] [Thread-1 (]: Writing injected SQL for node "model.HelloWorldDBT.my_second_dbt_model"
+[0m12:51:51.861674 [debug] [Thread-1 (]: Timing info for model.HelloWorldDBT.my_second_dbt_model (compile): 12:51:51.857029 => 12:51:51.861539
+[0m12:51:51.861905 [debug] [Thread-1 (]: Began executing node model.HelloWorldDBT.my_second_dbt_model
+[0m12:51:51.877387 [debug] [Thread-1 (]: Writing runtime sql for node "model.HelloWorldDBT.my_second_dbt_model"
+[0m12:51:51.877874 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:51:51.878096 [debug] [Thread-1 (]: On model.HelloWorldDBT.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "HelloWorldDBT", "target_name": "dev", "node_id": "model.HelloWorldDBT.my_second_dbt_model"} */
+
+
+  create or replace view `helix-offc-test`.`coupa_api_dm`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `helix-offc-test`.`coupa_api_dm`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m12:51:53.470597 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=helix-offc-test&j=bq:US:35873d30-0c69-42c2-97af-334241c09a8f&page=queryresults
+[0m12:51:53.473723 [debug] [Thread-1 (]: Timing info for model.HelloWorldDBT.my_second_dbt_model (execute): 12:51:51.862042 => 12:51:53.473437
+[0m12:51:53.474725 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f84dc74b-284a-447d-85a2-50e15b985422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115bc63d0>]}
+[0m12:51:53.475580 [info ] [Thread-1 (]: 2 of 2 OK created sql view model coupa_api_dm.my_second_dbt_model .............. [[32mCREATE VIEW (0 processed)[0m in 1.62s]
+[0m12:51:53.476363 [debug] [Thread-1 (]: Finished running node model.HelloWorldDBT.my_second_dbt_model
+[0m12:51:53.478267 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:51:53.478547 [debug] [MainThread]: Connection 'model.HelloWorldDBT.my_second_dbt_model' was properly closed.
+[0m12:51:53.478828 [info ] [MainThread]: 
+[0m12:51:53.479172 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 8.41 seconds (8.41s).
+[0m12:51:53.479982 [debug] [MainThread]: Command end result
+[0m12:51:53.489715 [info ] [MainThread]: 
+[0m12:51:53.490114 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:51:53.490395 [info ] [MainThread]: 
+[0m12:51:53.490698 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m12:51:53.491224 [debug] [MainThread]: Command `dbt run` succeeded at 12:51:53.491149 after 8.93 seconds
+[0m12:51:53.491549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ffa610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112678390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ed32d0>]}
+[0m12:51:53.491797 [debug] [MainThread]: Flushing usage events
+[0m12:51:57.857231 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m12:58:08.758413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f23b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059cf7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10621e210>]}
+
+
+============================== 12:58:08.762464 | 7fcddc0b-a6ac-468b-919b-d991e27430bb ==============================
+[0m12:58:08.762464 [info ] [MainThread]: Running with dbt=1.5.0
+[0m12:58:08.762796 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/adrathi/HelloWorldDBT/logs', 'profiles_dir': '/Users/adrathi/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:58:09.065342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7fcddc0b-a6ac-468b-919b-d991e27430bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070a7450>]}
+[0m12:58:09.070991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7fcddc0b-a6ac-468b-919b-d991e27430bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070d47d0>]}
+[0m12:58:09.109122 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m12:58:09.117040 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m12:58:09.117351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7fcddc0b-a6ac-468b-919b-d991e27430bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f4cc90>]}
+[0m12:58:09.449353 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m12:58:09.455347 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m12:58:09.490228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7fcddc0b-a6ac-468b-919b-d991e27430bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107224ad0>]}
+[0m12:58:09.493896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7fcddc0b-a6ac-468b-919b-d991e27430bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070e4a90>]}
+[0m12:58:09.494114 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 353 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m12:58:09.494284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7fcddc0b-a6ac-468b-919b-d991e27430bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107191cd0>]}
+[0m12:58:09.494960 [info ] [MainThread]: 
+[0m12:58:09.495297 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:58:09.495887 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_helix-offc-test'
+[0m12:58:09.496139 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:58:11.158491 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_helix-offc-test, now list_helix-offc-test_demo_dataset_dbt)
+[0m12:58:11.159265 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:58:11.833564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7fcddc0b-a6ac-468b-919b-d991e27430bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1072789d0>]}
+[0m12:58:11.835139 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:58:11.835741 [info ] [MainThread]: 
+[0m12:58:11.840361 [debug] [Thread-1 (]: Began running node model.HelloWorldDBT.my_first_dbt_model
+[0m12:58:11.840805 [info ] [Thread-1 (]: 1 of 2 START sql table model demo_dataset_dbt.my_first_dbt_model ............... [RUN]
+[0m12:58:11.841312 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_helix-offc-test_demo_dataset_dbt, now model.HelloWorldDBT.my_first_dbt_model)
+[0m12:58:11.841545 [debug] [Thread-1 (]: Began compiling node model.HelloWorldDBT.my_first_dbt_model
+[0m12:58:11.843318 [debug] [Thread-1 (]: Writing injected SQL for node "model.HelloWorldDBT.my_first_dbt_model"
+[0m12:58:11.844233 [debug] [Thread-1 (]: Timing info for model.HelloWorldDBT.my_first_dbt_model (compile): 12:58:11.841678 => 12:58:11.844134
+[0m12:58:11.844388 [debug] [Thread-1 (]: Began executing node model.HelloWorldDBT.my_first_dbt_model
+[0m12:58:11.863341 [debug] [Thread-1 (]: Writing runtime sql for node "model.HelloWorldDBT.my_first_dbt_model"
+[0m12:58:11.863980 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:58:11.864231 [debug] [Thread-1 (]: On model.HelloWorldDBT.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "HelloWorldDBT", "target_name": "dev", "node_id": "model.HelloWorldDBT.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `helix-offc-test`.`demo_dataset_dbt`.`my_first_dbt_model`
+    
+    
+
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m12:58:15.838478 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=helix-offc-test&j=bq:US:9e1728c5-9664-4d15-9e57-5688746ca198&page=queryresults
+[0m12:58:15.849100 [debug] [Thread-1 (]: Timing info for model.HelloWorldDBT.my_first_dbt_model (execute): 12:58:11.844471 => 12:58:15.848953
+[0m12:58:15.849689 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fcddc0b-a6ac-468b-919b-d991e27430bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071476d0>]}
+[0m12:58:15.850099 [info ] [Thread-1 (]: 1 of 2 OK created sql table model demo_dataset_dbt.my_first_dbt_model .......... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 4.01s]
+[0m12:58:15.850483 [debug] [Thread-1 (]: Finished running node model.HelloWorldDBT.my_first_dbt_model
+[0m12:58:15.850975 [debug] [Thread-1 (]: Began running node model.HelloWorldDBT.my_second_dbt_model
+[0m12:58:15.851255 [info ] [Thread-1 (]: 2 of 2 START sql view model demo_dataset_dbt.my_second_dbt_model ............... [RUN]
+[0m12:58:15.851708 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.HelloWorldDBT.my_first_dbt_model, now model.HelloWorldDBT.my_second_dbt_model)
+[0m12:58:15.851926 [debug] [Thread-1 (]: Began compiling node model.HelloWorldDBT.my_second_dbt_model
+[0m12:58:15.854066 [debug] [Thread-1 (]: Writing injected SQL for node "model.HelloWorldDBT.my_second_dbt_model"
+[0m12:58:15.854811 [debug] [Thread-1 (]: Timing info for model.HelloWorldDBT.my_second_dbt_model (compile): 12:58:15.852063 => 12:58:15.854684
+[0m12:58:15.855036 [debug] [Thread-1 (]: Began executing node model.HelloWorldDBT.my_second_dbt_model
+[0m12:58:15.865843 [debug] [Thread-1 (]: Writing runtime sql for node "model.HelloWorldDBT.my_second_dbt_model"
+[0m12:58:15.866516 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:58:15.866750 [debug] [Thread-1 (]: On model.HelloWorldDBT.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "HelloWorldDBT", "target_name": "dev", "node_id": "model.HelloWorldDBT.my_second_dbt_model"} */
+
+
+  create or replace view `helix-offc-test`.`demo_dataset_dbt`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `helix-offc-test`.`demo_dataset_dbt`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m12:58:17.554214 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=helix-offc-test&j=bq:US:b81013d6-5a4a-44a7-a1df-b0dd503f5f88&page=queryresults
+[0m12:58:17.556588 [debug] [Thread-1 (]: Timing info for model.HelloWorldDBT.my_second_dbt_model (execute): 12:58:15.855168 => 12:58:17.556345
+[0m12:58:17.557360 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fcddc0b-a6ac-468b-919b-d991e27430bb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107144850>]}
+[0m12:58:17.557840 [info ] [Thread-1 (]: 2 of 2 OK created sql view model demo_dataset_dbt.my_second_dbt_model .......... [[32mCREATE VIEW (0 processed)[0m in 1.71s]
+[0m12:58:17.558234 [debug] [Thread-1 (]: Finished running node model.HelloWorldDBT.my_second_dbt_model
+[0m12:58:17.559266 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:58:17.559458 [debug] [MainThread]: Connection 'model.HelloWorldDBT.my_second_dbt_model' was properly closed.
+[0m12:58:17.559633 [info ] [MainThread]: 
+[0m12:58:17.559872 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 8.06 seconds (8.06s).
+[0m12:58:17.560402 [debug] [MainThread]: Command end result
+[0m12:58:17.565113 [info ] [MainThread]: 
+[0m12:58:17.565327 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:58:17.565479 [info ] [MainThread]: 
+[0m12:58:17.565660 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m12:58:17.565950 [debug] [MainThread]: Command `dbt run` succeeded at 12:58:17.565907 after 8.89 seconds
+[0m12:58:17.566116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059ce7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10584ff90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100747210>]}
+[0m12:58:17.566271 [debug] [MainThread]: Flushing usage events
+[0m12:58:22.608296 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
